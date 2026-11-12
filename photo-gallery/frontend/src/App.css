@@ -1,0 +1,105 @@
+
+.gallery-page {
+  min-height: 100vh;
+  padding: 30px 16px;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery-header h1 {
+  font-size: 30px;
+  color: #263449;
+  margin-bottom: 8px;
+}
+
+.gallery-header p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.gallery-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.photo-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.photo-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 18px;
+}
+
+.photo-author {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.photo-author strong {
+  color: #263449;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #4267a9;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.like-button:hover {
+  background: #edf3ff;
+}
+
+.loading-area {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.loading-area button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4267a9;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .gallery-page {
+    padding: 20px 12px;
+  }
+
+  .gallery-header h1 {
+    font-size: 25px;
+  }
+
+  .photo-card img {
+    max-height: 350px;
+  }
+}
